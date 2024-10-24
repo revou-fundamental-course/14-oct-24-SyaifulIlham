@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#headquarters">Our Profile</a>
+            <a href="#about-me">aboutme</a>
+            <a href="#">Message</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="welcome">
+            <h1>Hi <span id="userName"></span>, Welcome to Website</h1>
+            <p>Ini adalah website latihan pertama</p>
+        </section>
+        <section id="headquarters">
+            <h2>Our Headquarters</h2>
+            <div class="locations">
+                <div class="location">
+                    <h3>Jakarta</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa-TLW4UfNQHoHesCOIlHXOmo3DlQawbA_-A&s" alt="Jakarta">
+                </div>
+                <div class="location">
+                    <h3>Bandung</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5h0A3f0J5jh8ixqR-mSkSBGO0wLlFt0Fsg&s" alt="Bandung">
+                </div>
+                <div class="location">
+                    <h3>Surabaya</h3>
+                    <img src="https://images.bisnis.com/posts/2021/08/24/1433371/surabaya.jpg" alt="Surabaya">
+                </div>
+            </div>
+        </section>        
+        <section id="about-me">
+            <h1>About me</h1>
+            <p>saya adalah seorang pelajar asal depok yang memiliki minat dalam belajar pemograman terutama pada bidang web development saya sudah mempelajari beberapa bahasa pemograman seperti javascript, php, java, c++, dan laravel</p>
+        </section>
+        <section id="message-us">
+            <h2 style="margin-left: 300px;">Message Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="birthdate">Tanggal Lahir:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+
+                <label for="gender">Jenis Kelamin:</label>
+                <div class="gender-selection">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <!-- Tambahkan elemen ini untuk menampilkan respons -->
+            <div id="form-response" style="margin-top: 20px;"></div>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
